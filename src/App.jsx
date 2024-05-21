@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Route} from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import './styles/reset.css';
 import Navbar from "./components/NavBar";
+import ItemListContainer from "./components/ItemListContainer";
 
 const App = () => {
   return (
     <div>
       <Navbar />
+      <ItemListContainer title="Produtos" />
     </div>
   );
 };
