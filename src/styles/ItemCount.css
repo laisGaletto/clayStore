@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #C56F54;
+  border-radius: 5px;
+  background-color: #C56F54;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #7f4736;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  background-color: #f2e2e2;
+  color: #7f4736;
+  border: 1px solid #7f4736;
+}
+
+.count-display {
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid #C56F54;
+  border-radius: 5px;
+  color: #C56F54;
+}

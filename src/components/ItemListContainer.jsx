@@ -1,10 +1,15 @@
-import React from "react";
+import React from 'react';
+import ItemCount from './ItemCount';
 
-const ItemListContainer = ({ title }) => {
+function ItemListContainer({title}) {
+  const handleAdd = (quantity) => {
+    console.log(`Added ${quantity} items to the cart.`);
+  };
+
   return (
     <div>
-      <h2>{title}</h2>
-      <p>Aqui você pode adicionar sua lista de itens.</p>
+      <h1>{title}</h1>
+      <ItemCount stock={5} initial={1} onAdd={handleAdd} />
     </div>
   );
 }
